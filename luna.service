@@ -1,0 +1,11 @@
+[Unit]
+Description=Luna animated wallpaper
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/luna set %h/Videos/Luna/default.mp4
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

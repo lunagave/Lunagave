@@ -1,0 +1,14 @@
+Source: luna
+Section: utils
+Priority: optional
+Maintainer: Fernando <fernando@example.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://example.com/luna
+
+Package: luna
+Architecture: all
+Depends: ${misc:Depends}, mpv, python3
+Description: Fondos de pantalla animados, fácil y sin plugins
+ Luna pone fondos de pantalla animados en Linux
+ sin plugins complicados.

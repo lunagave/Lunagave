@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Luna
+Comment=Fondos de pantalla animados, fácil y sin plugins
+Exec=luna-gui
+Icon=luna
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupNotify=true
+Keywords=wallpaper;fondo;animado;video;Luna;

@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_install:
+	install -Dm755 luna.py debian/luna/usr/bin/luna
+	install -Dm644 luna.desktop debian/luna/usr/share/applications/luna.desktop
+	install -Dm644 luna.service debian/luna/usr/lib/systemd/user/luna.service
