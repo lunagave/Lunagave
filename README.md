@@ -6,9 +6,9 @@
 
 **Pica, elige tu fondo… y listo. Sin terminal, sin complicarte.**
 
-`v1.0 beta` &nbsp;•&nbsp; 🐧 Linux &nbsp;•&nbsp; 🟡 Arch / Pacman &nbsp;•&nbsp; 🌀 Debian / Ubuntu (.deb) &nbsp;•&nbsp; 📜 MIT
+`v1.0` &nbsp;•&nbsp; 🐧 Linux &nbsp;•&nbsp; 🟡 Arch / Pacman &nbsp;•&nbsp; 🌀 Debian / Ubuntu (.deb) &nbsp;•&nbsp; 📜 MIT
 
-> **✨ Beta:** Luna v1.0 beta. Todavía es Beta, pero ya funciona bien.
+> **✨ Estable:** Luna v1.0. Versión estable, ya funciona bien.
 
 <img src="luna_terminal.png" alt="Luna — terminal de bienvenida" width="640">
 
@@ -93,11 +93,13 @@ Pica **▶ Continuar — Abrir Luna**, y se abre el programa.
 
 ## 💻 Comandos
 
-### 🟡 Arch / Pacman
+### 🟡 Arch / Pacman (AUR) — ⏳ Próximamente
 
 ```bash
-sudo pacman -S luna
+sudo pacman -S luna-wallpaper
 ```
+
+> Luna aún no está en AUR. Este comando es para cuando esté publicada ahí.
 
 ### 🌀 Debian / Ubuntu (.deb)
 
@@ -108,7 +110,7 @@ sudo apt install luna
 ### 🌀 Chaotic-AUR — ⏳ Próximamente
 
 ```bash
-sudo pacman -S luna
+sudo pacman -S luna-wallpaper
 ```
 
 > Luna aún no está en Chaotic-AUR. Este comando es para cuando esté publicada ahí.
@@ -116,12 +118,12 @@ sudo pacman -S luna
 ### 📦 Flatpak — ⏳ Próximamente
 
 ```bash
-flatpak install flathub io.github.guzmankaza.Luna
+flatpak install flathub io.github.lunagave.Luna
 ```
 
 > Luna aún no está en Flathub. Este comando es para cuando esté publicada ahí.
 
-> ⚠️ **Luna aún no está en AUR, Chaotic-AUR ni Flathub.** Para la Beta, se instala con el comando único de Luna Launcher (makepkg).
+> ⚠️ **Luna aún no está en AUR, Chaotic-AUR ni Flathub.** Para la versión estable, se instala con el comando único de Luna Launcher (makepkg).
 
 ### 📦 Instalar manualmente el .zip / .tar.gz / .deb
 
@@ -165,11 +167,11 @@ Si pide dependencias, corre después:
 sudo apt install -f
 ```
 
-> ⚠️ El .deb es de la versión 0.1.0-beta, no v1.0 beta. El .zip y el .tar.gz son de Luna Launcher v1.0 beta.
+> ⚠️ El .deb es de la versión 0.1.0-beta, no v1.0. El .zip y el .tar.gz son de Luna Launcher v1.0.
 
 ---
 
-## 🛠️ Instalación desde el código (Beta)
+## 🛠️ Instalación desde el código
 
 **En Arch / Garuda:**
 
@@ -228,7 +230,7 @@ Con eso Luna se borra completa, sin dejar nada. 🗑️✨
 
 <div align="center">
 
-### 🌙 Luna v1.0 beta
+### 🌙 Luna v1.0
 
 **Hecho por Vega & Kiki**
 **Guzman**
