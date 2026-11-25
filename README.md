@@ -182,7 +182,7 @@ Con eso Luna se borra completa, sin dejar nada. 🗑️✨
 
 ---
 
-## 🔍 Búsqueda
+## Búsqueda
 
 Luna es una app de **fondos de pantalla animados para Linux**: *live wallpaper Linux*, *animated wallpaper Linux*, *video wallpaper Linux*, *dynamic wallpaper Linux* y alternativa a *Wallpaper Engine en Linux*.
 
