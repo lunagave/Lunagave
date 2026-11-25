@@ -91,6 +91,22 @@ Pica **▶ Continuar — Abrir Luna**, y se abre el programa.
 
 ---
 
+## ⏳ Próximamente
+
+### 🟡 Arch / Pacman (AUR) — ⏳ Próximamente
+
+Luna aún no está en AUR.
+
+### 🌀 Chaotic-AUR — ⏳ Próximamente
+
+Luna aún no está en Chaotic-AUR.
+
+### 📦 Flatpak — ⏳ Próximamente
+
+Luna aún no está en Flathub.
+
+---
+
 ## 💻 Comandos
 
 ### 🌀 Debian / Ubuntu (.deb)
