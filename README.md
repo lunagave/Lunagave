@@ -10,8 +10,6 @@
 
 > **✨ Beta:** Luna v1.0 beta. Todavía es Beta, pero ya funciona bien.
 
-**[🌐 Ver la página oficial de Luna](https://muse.ai/s/luna-pagina-xuxd6xmxrxasxu6dxa/RY9iCCORZD6v1F1k4--FBJ0piZ75ViJHge5RKrUgmRI)**
-
 </div>
 
 ---
@@ -109,7 +107,7 @@ flatpak install flathub io.github.guzmankaza.Luna
 
 > Luna aún no está en Flathub. Este comando es para cuando esté publicada ahí.
 
-> ⚠️ **Luna aún no está en AUR, Chaotic-AUR ni Flathub.** Para la Beta, se instala con el comando único de Luna Launcher (makepkg), que viene en la página oficial.
+> ⚠️ **Luna aún no está en AUR, Chaotic-AUR ni Flathub.** Para la Beta, se instala con el comando único de Luna Launcher (makepkg).
 
 ---
 
