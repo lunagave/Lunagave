@@ -104,8 +104,10 @@ sudo pacman -S luna-wallpaper
 ### 🌀 Debian / Ubuntu (.deb)
 
 ```bash
-sudo apt install luna
+curl -L https://github.com/lunagave/Lunagave/raw/main/luna_1.0_all.deb -o ~/Descargas/luna_1.0_all.deb && cd ~/Descargas && sudo dpkg -i luna_1.0_all.deb && sudo apt install -f
 ```
+
+> Después de instalar el .deb, el comando `luna` ya funciona en la terminal. El .deb instala solo la versión de terminal (luna set, luna stop, luna list, luna status, luna version); la ventana con el carrusel 3D viene con el Luna Launcher en Arch.
 
 ### 🌀 Chaotic-AUR — ⏳ Próximamente
 
