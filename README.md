@@ -59,7 +59,7 @@ Pones un **video o una foto como fondo** de tu escritorio, sin terminal y sin co
 
 <div align="center">
 
-<img src="luna-1.0-beta-instalado-carrusel.webp" alt="Luna — carrusel 3D" width="640">
+<img src="luna-1.0-instalado-carrusel.webp" alt="Luna — carrusel 3D" width="640">
 
 </div>
 
@@ -73,19 +73,19 @@ Pones un **video o una foto como fondo** de tu escritorio, sin terminal y sin co
 
 Pica **Instalar Arch Pacman** o **Instalar .deb Debian Ubuntu**. La contraseña va al instalador, no se pide en la terminal.
 
-<img src="luna-1.0-beta-paso1-instalar.webp" alt="Luna — paso 1, Instalar" width="640">
+<img src="luna-1.0-paso1-instalar.webp" alt="Luna — paso 1, Instalar" width="640">
 
 ### 2️⃣ Proceso
 
 Barrita animada, despacio, instalando Luna del 1 al 100.
 
-<img src="luna-1.0-beta-paso2-instalando.webp" alt="Luna — paso 2, instalando" width="640">
+<img src="luna-1.0-paso2-instalando.webp" alt="Luna — paso 2, instalando" width="640">
 
 ### 3️⃣ Continuar / Finalizar
 
 Pica **▶ Continuar — Abrir Luna**, y se abre el programa.
 
-<img src="luna-1.0-beta-paso3-completa.webp" alt="Luna — paso 3, instalación completa" width="640">
+<img src="luna-1.0-paso3-completa.webp" alt="Luna — paso 3, instalación completa" width="640">
 
 **Sin tantos comandos. Solo picas y listo.** 🎉
 
@@ -132,7 +132,7 @@ Si prefieres instalar Luna a mano, con el archivo:
 **1. Descarga el archivo**
 - **Luna Launcher v1.0:** [luna-launcher1.zip](https://github.com/lunagave/Lunagave/blob/main/luna-launcher1.zip)
 - O el mismo instalador, Luna Launcher v1.0, en .tar.gz (para Arch, en terminal): [luna-launcher1.tar.gz](https://github.com/lunagave/Lunagave/blob/main/luna-launcher1.tar.gz)
-- **Para Debian / Ubuntu, Luna Launcher v1.0:** [luna_0.1.0-beta_all.deb](https://github.com/lunagave/Lunagave/blob/main/luna_0.1.0-beta_all.deb)
+- **Para Debian / Ubuntu, Luna Launcher v1.0:** [luna_1.0_all.deb](https://github.com/lunagave/Lunagave/blob/main/luna_1.0_all.deb)
 
 **2. Descomprime el .zip o el .tar.gz**
 - Clic derecho > Extraer, o en la terminal:
@@ -158,7 +158,7 @@ bash luna-installer.sh
 **5. Para instalar el .deb en Debian / Ubuntu**
 
 ```bash
-sudo dpkg -i luna_0.1.0-beta_all.deb
+sudo dpkg -i luna_1.0_all.deb
 ```
 
 Si pide dependencias, corre después:
@@ -167,7 +167,7 @@ Si pide dependencias, corre después:
 sudo apt install -f
 ```
 
-> ⚠️ El .deb es de la versión 0.1.0-beta, no v1.0. El .zip y el .tar.gz son de Luna Launcher v1.0.
+> El .deb, el .zip y el .tar.gz son de Luna Launcher v1.0.
 
 ---
 
