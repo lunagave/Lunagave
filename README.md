@@ -10,7 +10,7 @@
 
 > **✨ Beta:** Luna v1.0 beta. Todavía es Beta, pero ya funciona bien.
 
-<img src="81630_0_1xuc.webp" alt="Luna — póster oficial" width="480">
+<img src="luna_terminal.png" alt="Luna — terminal de bienvenida" width="640">
 
 </div>
 
