@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Luna
+Comment=Fondos de pantalla animados en Linux, fácil y sin plugins
+Comment[en]=Animated wallpapers for Linux, easy and without plugins
+Exec=luna-gui
+Icon=io.github.lunagave.Luna
+Terminal=false
+Categories=Utility;
+Keywords=wallpaper;live wallpaper;animated wallpaper;video wallpaper;
+StartupWMClass=luna-gui
