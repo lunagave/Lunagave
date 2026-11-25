@@ -10,6 +10,8 @@
 
 > **✨ Beta:** Luna v1.0 beta. Todavía es Beta, pero ya funciona bien.
 
+<img src="81630_0_1xuc.webp" alt="Luna — póster oficial" width="480">
+
 </div>
 
 ---
@@ -55,6 +57,12 @@ Pones un **video o una foto como fondo** de tu escritorio, sin terminal y sin co
 3. Elige tu fondo en el **carrusel 3D**.
 4. Pica **🖼️ Poner Imagen en el Fondo de Pantalla**.
 
+<div align="center">
+
+<img src="luna-1.0-beta-instalado-carrusel.webp" alt="Luna — carrusel 3D" width="640">
+
+</div>
+
 > **O, más fácil todavía:** haz **clic derecho** en una imagen o video y elige **Poner con Luna**. 🖱️✨
 
 ---
@@ -65,13 +73,19 @@ Pones un **video o una foto como fondo** de tu escritorio, sin terminal y sin co
 
 Pica **Instalar Arch Pacman** o **Instalar .deb Debian Ubuntu**. La contraseña va al instalador, no se pide en la terminal.
 
+<img src="luna-1.0-beta-paso1-instalar.webp" alt="Luna — paso 1, Instalar" width="640">
+
 ### 2️⃣ Proceso
 
 Barrita animada, despacio, instalando Luna del 1 al 100.
 
+<img src="luna-1.0-beta-paso2-instalando.webp" alt="Luna — paso 2, instalando" width="640">
+
 ### 3️⃣ Continuar / Finalizar
 
 Pica **▶ Continuar — Abrir Luna**, y se abre el programa.
+
+<img src="luna-1.0-beta-paso3-completa.webp" alt="Luna — paso 3, instalación completa" width="640">
 
 **Sin tantos comandos. Solo picas y listo.** 🎉
 
