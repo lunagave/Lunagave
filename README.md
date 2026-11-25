@@ -129,7 +129,7 @@ Si prefieres instalar Luna a mano, con el archivo:
 
 **1. Descarga el archivo**
 - **Luna Launcher v1.0:** [luna-launcher3.zip](https://github.com/lunagave/Lunagave/blob/main/luna-launcher3.zip)
-- O el mismo instalador, Luna Launcher v1.0, en .tar.gz: [luna-launcher3.tar.gz](https://github.com/lunagave/Lunagave/blob/main/luna-launcher3.tar.gz)
+- O el mismo instalador, Luna Launcher v1.0, en .tar.gz (para Arch, en terminal): [luna-launcher3.tar.gz](https://github.com/lunagave/Lunagave/blob/main/luna-launcher3.tar.gz)
 - **Para Debian / Ubuntu, Luna Launcher v1.0:** [luna_0.1.0-beta_all.deb](https://github.com/lunagave/Lunagave/blob/main/luna_0.1.0-beta_all.deb)
 
 **2. Descomprime el .zip o el .tar.gz**
@@ -139,13 +139,13 @@ Si prefieres instalar Luna a mano, con el archivo:
 unzip luna-launcher3.zip
 ```
 
-Si es .tar.gz:
+Si es .tar.gz (para Arch, en terminal):
 
 ```bash
 tar -xzf luna-launcher3.tar.gz
 ```
 
-**3. Entra a la carpeta y corre el instalador**
+**3. Entra a la carpeta y corre el instalador en la terminal**
 
 ```bash
 bash luna-installer.sh
