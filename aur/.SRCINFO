@@ -1,6 +1,6 @@
 pkgbase = luna-wallpaper
 	pkgdesc = Fondos de pantalla animados en Linux, fácil y sin plugins
-	pkgver = 1.0
+	pkgver = 1.0.1
 	pkgrel = 1
 	url = https://github.com/lunagave/Lunagave
 	arch = any
@@ -14,7 +14,7 @@ pkgbase = luna-wallpaper
 	optdepends = xwinwrap: para X11
 	provides = luna
 	conflicts = luna
-	source = luna-wallpaper-1.0.tar.gz::https://github.com/lunagave/Lunagave/archive/refs/tags/v1.0.tar.gz
-	sha256sums = ce0d21dc99a7baa1e620c8b4e01e59d30256a80820730a6103a081b1e4ce2a92
+	source = luna-wallpaper-1.0.1.tar.gz::https://github.com/lunagave/Lunagave/archive/refs/tags/v1.0.1.tar.gz
+	sha256sums = 42f76411279a8333b57df7c35b3c8587eec1fffc876ddf9e40cb86e39157cb07
 
 pkgname = luna-wallpaper

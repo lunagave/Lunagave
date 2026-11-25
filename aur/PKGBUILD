@@ -1,5 +1,5 @@
 # Maintainer: Fernando Guzman <guzmankaza@gmail.com>
-# Luna Launcher v1.0 — versión estable
+# Luna Launcher v1.0.1 — versión estable
 # PKGBUILD para AUR con el nombre luna-wallpaper.
 # El nombre "luna" ya está ocupado en AUR por otro programa
 # (un gestor de dependencias npm), así que el paquete es luna-wallpaper.
@@ -7,7 +7,7 @@
 # El viejo usa fuentes locales con sha256sums SKIP y no sirve para AUR.
 # Este archivo vive en ~/workspace/luna/aur/ hasta que se publique en AUR.
 pkgname=luna-wallpaper
-pkgver=1.0
+pkgver=1.0.1
 pkgrel=1
 pkgdesc="Fondos de pantalla animados en Linux, fácil y sin plugins"
 arch=('any')
@@ -20,14 +20,15 @@ optdepends=('mpvpaper: para Wayland'
 # instalar luna-wallpaper reemplaza limpiamente al paquete viejo "luna".
 provides=('luna')
 conflicts=('luna')
-# Fuente: el tarball del tag estable v1.0 de GitHub (creado el 25 nov 2026,
-# commit 2126272e10d76c6079ba067f34eb3a2946e38860). El sha256 de abajo es el
-# real del tarball, verificado el 25 nov 2026.
+# Fuente: el tarball del tag estable v1.0.1 de GitHub (creado el 25 nov 2026,
+# commit a47d8b5db85a9ea96ef596bf70cc54dae70a8d8c). El sha256 de abajo es el
+# real del tarball, verificado el 25 nov 2026. El tag v1.0.1 ya incluye
+# luna.png en la raíz del repo, así que el build ya no falla por el icono.
 # Solo se instalan las imágenes v1.0 que están en el repo: el póster
 # 81630_0_1xuc.webp y las 4 imágenes luna-1.0-*.webp. Las capturas viejas
 # beta ya NO se instalan ni se suben a la versión estable.
 source=("$pkgname-$pkgver.tar.gz::https://github.com/lunagave/Lunagave/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('ce0d21dc99a7baa1e620c8b4e01e59d30256a80820730a6103a081b1e4ce2a92')
+sha256sums=('42f76411279a8333b57df7c35b3c8587eec1fffc876ddf9e40cb86e39157cb07')
 
 package() {
   cd "$srcdir/Lunagave-$pkgver"

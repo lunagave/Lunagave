@@ -1,6 +1,6 @@
 # Publicar Luna en AUR como luna-wallpaper — pasos exactos, en orden
 
-Versión: Luna v1.0 estable. Repo: https://github.com/lunagave/Lunagave (head c0d1fdb).
+Versión: Luna v1.0.1 estable. Repo: https://github.com/lunagave/Lunagave (head a47d8b5).
 El nombre `luna` ya está ocupado en AUR por otro programa (gestor npm), verificado
 con la API de AUR. `luna-wallpaper` está libre (resultcount 0). Fernando aprobó
 `luna-wallpaper` el 25 nov 2026.
@@ -19,20 +19,18 @@ con la API de AUR. `luna-wallpaper` está libre (resultcount 0). Fernando aprob�
 1. Subir el icono a la raíz del repo como `luna.png`:
    `~/workspace/luna/flatpak/io.github.lunagave.Luna.png` (512x512).
    El PKGBUILD lo instala como icono de la app. Sin él, el build falla.
-2. Verificar que el repo en main tenga la versión 1.0 estable (ya está, head 2126272).
+   (HECHO: luna.png está en la raíz del repo desde el 25 nov 2026.)
+2. Verificar que el repo en main tenga la versión estable (ya está, head a47d8b5).
 
-## Paso 1 — Tag estable v1.0 en GitHub (YA HECHO el 25 nov 2026)
-El tag `v1.0` ya existe en el repo lunagave/Lunagave (release "Luna v1.0",
-Latest, commit `2126272e10d76c6079ba067f34eb3a2946e38860`, 11:10 CST).
+## Paso 1 — Tag estable v1.0.1 en GitHub (YA HECHO el 25 nov 2026)
+El tag `v1.0.1` ya existe en el repo lunagave/Lunagave (release "Luna v1.0.1",
+Latest, commit `a47d8b5db85a9ea96ef596bf70cc54dae70a8d8c`, 15:07 CST).
 El sha256 real del tarball ya está puesto en el PKGBUILD y en .SRCINFO:
-`ce0d21dc99a7baa1e620c8b4e01e59d30256a80820730a6103a081b1e4ce2a92`.
+`42f76411279a8333b57df7c35b3c8587eec1fffc876ddf9e40cb86e39157cb07`.
+El tarball v1.0.1 ya incluye `luna.png` en la raíz y ya no trae las
+imágenes viejas beta: el bloqueo anterior quedó resuelto.
 Regenerar .SRCINFO en Garuda con `makepkg --printsrcinfo > .SRCINFO`
 después de cualquier cambio al PKGBUILD.
-
-⚠️ BLOQUEO: el PKGBUILD todavía NO construye del tarball v1.0 tal cual:
-instala `luna.png` y 7 imágenes `media-generation-*.webp` que NO están en
-el tarball v1.0 (ni en el repo). Antes de mandar a AUR hay que crear un tag
-nuevo (p. ej. v1.0.1) con esos archivos, o quitarlos del package().
 
 ## Paso 2 — En Garuda: probar el build
 El sha256 real ya está puesto (ver Paso 1), así que `updpkgsums` ya no hace
@@ -63,7 +61,7 @@ git clone ssh://aur@aur.archlinux.org/luna-wallpaper.git
 cd luna-wallpaper
 cp ~/aur-luna/PKGBUILD ~/aur-luna/.SRCINFO .
 git add PKGBUILD .SRCINFO
-git commit -m "Luna Wallpaper 1.0 - fondos animados en Linux"
+git commit -m "Luna Wallpaper 1.0.1 - fondos animados en Linux"
 git push
 ```
 4. Verificar en https://aur.archlinux.org/packages/luna-wallpaper
@@ -76,11 +74,10 @@ en la lista de prohibidos de Chaotic-AUR. La revisión la hacen personas
 mantenedoras, sin plazo fijo: días o 1-2 semanas.
 
 ## Qué falta de Fernando
-- [ ] Subir `luna.png` a la raíz del repo (o decirme que lo suba yo).
+- [x] Subir `luna.png` a la raíz del repo. (HECHO el 25 nov 2026.)
 - [x] Crear el tag `v1.0` en GitHub. (HECHO el 25 nov 2026, 11:10 CST.)
-- [ ] Resolver el bloqueo del Paso 1: `luna.png` y las 7 imágenes
-      `media-generation-*.webp` no están en el tarball v1.0 (tag nuevo
-      v1.0.1 con esos archivos, o quitarlos del PKGBUILD).
+- [x] Crear el tag `v1.0.1` con `luna.png` incluido y PKGBUILD corregido.
+      (HECHO el 25 nov 2026, 15:07 CST; el bloqueo del Paso 1 quedó resuelto.)
 - [ ] Crear cuenta AUR y registrar su clave SSH.
 - [ ] Correr `updpkgsums` + `makepkg -si` en su Garuda (esta máquina es
       Debian: no hay makepkg, no se puede generar el sha256 ni el .SRCINFO
