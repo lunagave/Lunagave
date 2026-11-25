@@ -123,12 +123,17 @@ flatpak install flathub io.github.guzmankaza.Luna
 
 > ⚠️ **Luna aún no está en AUR, Chaotic-AUR ni Flathub.** Para la Beta, se instala con el comando único de Luna Launcher (makepkg).
 
-### 📦 Instalar manualmente el .zip / .tar.gz
+### 📦 Instalar manualmente el .zip / .tar.gz / .deb
 
-Si prefieres instalar Luna a mano, con el archivo .zip o .tar.gz:
+Si prefieres instalar Luna a mano, con el archivo:
 
-1. **Descarga el archivo** `luna-launcher3.zip` desde el repo.
-2. **Descomprímelo** en una carpeta: clic derecho > Extraer, o en la terminal:
+**1. Descarga el archivo**
+- **Luna Launcher 3 (v1.0 beta):** [luna-launcher3.zip](https://github.com/lunagave/Lunagave/blob/main/luna-launcher3.zip)
+- O el mismo instalador en .tar.gz: `luna-launcher3.tar.gz` (todavía no está subido a GitHub).
+- **Para Debian / Ubuntu:** `luna_0.1.0-beta_all.deb` (todavía no está subido a GitHub).
+
+**2. Descomprime el .zip o el .tar.gz**
+- Clic derecho > Extraer, o en la terminal:
 
 ```bash
 unzip luna-launcher3.zip
@@ -137,18 +142,30 @@ unzip luna-launcher3.zip
 Si es .tar.gz:
 
 ```bash
-tar -xzf luna-*.tar.gz
+tar -xzf luna-launcher3.tar.gz
 ```
 
-3. **Entra a la carpeta** y corre el instalador:
+**3. Entra a la carpeta y corre el instalador**
 
 ```bash
 bash luna-installer.sh
 ```
 
-4. **Sigue los 3 pasos del instalador**: Instalar, Proceso y Continuar — Abrir Luna.
+**4. Sigue los 3 pasos del instalador:** Instalar, Proceso y Continuar — Abrir Luna.
 
-> El .zip todavía no está subido a GitHub Releases.
+**5. Para instalar el .deb en Debian / Ubuntu**
+
+```bash
+sudo dpkg -i luna_0.1.0-beta_all.deb
+```
+
+Si pide dependencias, corre después:
+
+```bash
+sudo apt install -f
+```
+
+> ⚠️ El .deb es de la versión 0.1.0-beta, no v1.0 beta. El .zip y el .tar.gz son Luna Launcher 3 v1.0 beta.
 
 ---
 
