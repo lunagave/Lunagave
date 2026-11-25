@@ -182,6 +182,18 @@ Con eso Luna se borra completa, sin dejar nada. 🗑️✨
 
 ---
 
+## 🔍 Búsqueda
+
+Luna es una app de **fondos de pantalla animados para Linux**: *live wallpaper Linux*, *animated wallpaper Linux*, *video wallpaper Linux*, *dynamic wallpaper Linux* y alternativa a *Wallpaper Engine en Linux*.
+
+**En español:** fondos de pantalla animados Linux, fondos animados Linux, fondo de pantalla animado Linux, wallpaper animado Linux, video como fondo de pantalla Linux, fondos de escritorio animados, fondos animados Arch Linux, fondos animados Garuda Linux, fondos animados Ubuntu, fondos animados Debian.
+
+**In English:** live wallpaper Linux, animated wallpaper Linux, video wallpaper Linux, dynamic wallpaper Linux, live wallpaper Arch Linux, animated wallpaper Arch Linux, live wallpaper Garuda Linux, live wallpaper Ubuntu, live wallpaper Debian, wallpaper engine Linux alternative, video wallpaper KDE Plasma, live wallpaper Wayland, mpv wallpaper, Luna wallpaper, Luna live wallpaper.
+
+Hecha en Python con tkinter, mpv y makepkg.
+
+---
+
 <div align="center">
 
 ### 🌙 Luna v1.0 beta
