@@ -128,21 +128,21 @@ flatpak install flathub io.github.guzmankaza.Luna
 Si prefieres instalar Luna a mano, con el archivo:
 
 **1. Descarga el archivo**
-- **Luna Launcher v1.0:** [luna-launcher3.zip](https://github.com/lunagave/Lunagave/blob/main/luna-launcher3.zip)
-- O el mismo instalador, Luna Launcher v1.0, en .tar.gz (para Arch, en terminal): [luna-launcher3.tar.gz](https://github.com/lunagave/Lunagave/blob/main/luna-launcher3.tar.gz)
+- **Luna Launcher v1.0:** [luna-launcher1.zip](https://github.com/lunagave/Lunagave/blob/main/luna-launcher1.zip)
+- O el mismo instalador, Luna Launcher v1.0, en .tar.gz (para Arch, en terminal): [luna-launcher1.tar.gz](https://github.com/lunagave/Lunagave/blob/main/luna-launcher1.tar.gz)
 - **Para Debian / Ubuntu, Luna Launcher v1.0:** [luna_0.1.0-beta_all.deb](https://github.com/lunagave/Lunagave/blob/main/luna_0.1.0-beta_all.deb)
 
 **2. Descomprime el .zip o el .tar.gz**
 - Clic derecho > Extraer, o en la terminal:
 
 ```bash
-unzip luna-launcher3.zip
+unzip luna-launcher1.zip
 ```
 
 Si es .tar.gz (para Arch, en terminal):
 
 ```bash
-tar -xzf luna-launcher3.tar.gz
+tar -xzf luna-launcher1.tar.gz
 ```
 
 **3. Entra a la carpeta y corre el instalador en la terminal**
