@@ -123,6 +123,33 @@ flatpak install flathub io.github.guzmankaza.Luna
 
 > ⚠️ **Luna aún no está en AUR, Chaotic-AUR ni Flathub.** Para la Beta, se instala con el comando único de Luna Launcher (makepkg).
 
+### 📦 Instalar manualmente el .zip / .tar.gz
+
+Si prefieres instalar Luna a mano, con el archivo .zip o .tar.gz:
+
+1. **Descarga el archivo** `luna-launcher3.zip` desde el repo.
+2. **Descomprímelo** en una carpeta: clic derecho > Extraer, o en la terminal:
+
+```bash
+unzip luna-launcher3.zip
+```
+
+Si es .tar.gz:
+
+```bash
+tar -xzf luna-*.tar.gz
+```
+
+3. **Entra a la carpeta** y corre el instalador:
+
+```bash
+bash luna-installer.sh
+```
+
+4. **Sigue los 3 pasos del instalador**: Instalar, Proceso y Continuar — Abrir Luna.
+
+> El .zip todavía no está subido a GitHub Releases.
+
 ---
 
 ## 🛠️ Instalación desde el código (Beta)
