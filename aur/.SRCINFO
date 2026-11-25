@@ -1,0 +1,20 @@
+pkgbase = luna-wallpaper
+	pkgdesc = Fondos de pantalla animados en Linux, fácil y sin plugins
+	pkgver = 1.0
+	pkgrel = 1
+	url = https://github.com/lunagave/Lunagave
+	arch = any
+	license = MIT
+	depends = mpv
+	depends = python
+	depends = zenity
+	depends = tk
+	depends = python-pillow
+	optdepends = mpvpaper: para Wayland
+	optdepends = xwinwrap: para X11
+	provides = luna
+	conflicts = luna
+	source = luna-wallpaper-1.0.tar.gz::https://github.com/lunagave/Lunagave/archive/refs/tags/v1.0.tar.gz
+	sha256sums = ce0d21dc99a7baa1e620c8b4e01e59d30256a80820730a6103a081b1e4ce2a92
+
+pkgname = luna-wallpaper
