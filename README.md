@@ -158,6 +158,30 @@ sudo dpkg -i luna_1.0_all.deb
 
 ---
 
+## 🗑️ Desinstalar Luna
+
+### 🟡 En Arch
+
+```bash
+sudo pacman -Rns luna
+```
+
+### 🌀 En Debian / Ubuntu
+
+```bash
+sudo apt remove --purge luna
+```
+
+### 🧹 Para borrar también su configuración, en los dos
+
+```bash
+rm -rf ~/.config/luna
+```
+
+Con eso Luna se borra completa, sin dejar nada. 🗑️✨
+
+---
+
 <div align="center">
 
 ### 🌙 Luna v1.0 beta
