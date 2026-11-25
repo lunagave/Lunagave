@@ -93,14 +93,6 @@ Pica **▶ Continuar — Abrir Luna**, y se abre el programa.
 
 ## 💻 Comandos
 
-### 🟡 Arch / Pacman (AUR) — ⏳ Próximamente
-
-```bash
-sudo pacman -S luna-wallpaper
-```
-
-> Luna aún no está en AUR. Este comando es para cuando esté publicada ahí.
-
 ### 🌀 Debian / Ubuntu (.deb)
 
 ```bash
@@ -108,24 +100,6 @@ curl -L https://github.com/lunagave/Lunagave/raw/main/luna_1.0_all.deb -o ~/Desc
 ```
 
 > Después de instalar el .deb, el comando `luna` ya funciona en la terminal. El .deb instala solo la versión de terminal (luna set, luna stop, luna list, luna status, luna version); la ventana con el carrusel 3D viene con el Luna Launcher en Arch.
-
-### 🌀 Chaotic-AUR — ⏳ Próximamente
-
-```bash
-sudo pacman -S luna-wallpaper
-```
-
-> Luna aún no está en Chaotic-AUR. Este comando es para cuando esté publicada ahí.
-
-### 📦 Flatpak — ⏳ Próximamente
-
-```bash
-flatpak install flathub io.github.lunagave.Luna
-```
-
-> Luna aún no está en Flathub. Este comando es para cuando esté publicada ahí.
-
-> ⚠️ **Luna aún no está en AUR, Chaotic-AUR ni Flathub.** Para la versión estable, se instala con el comando único de Luna Launcher (makepkg).
 
 ### 📦 Instalar manualmente el .zip / .tar.gz / .deb
 
