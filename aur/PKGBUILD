@@ -1,0 +1,67 @@
+# Maintainer: Fernando Guzman <guzmankaza@gmail.com>
+# Luna Launcher v1.0 — versión estable
+# PKGBUILD para AUR con el nombre luna-wallpaper.
+# El nombre "luna" ya está ocupado en AUR por otro programa
+# (un gestor de dependencias npm), así que el paquete es luna-wallpaper.
+# OJO: este PKGBUILD NO es el PKGBUILD viejo de ~/workspace/luna/PKGBUILD.
+# El viejo usa fuentes locales con sha256sums SKIP y no sirve para AUR.
+# Este archivo vive en ~/workspace/luna/aur/ hasta que se publique en AUR.
+pkgname=luna-wallpaper
+pkgver=1.0
+pkgrel=1
+pkgdesc="Fondos de pantalla animados en Linux, fácil y sin plugins"
+arch=('any')
+url="https://github.com/lunagave/Lunagave"
+license=('MIT')
+depends=('mpv' 'python' 'zenity' 'tk' 'python-pillow')
+optdepends=('mpvpaper: para Wayland'
+            'xwinwrap: para X11')
+# El paquete instalado hoy en Garuda se llama "luna". Con provides/conflicts,
+# instalar luna-wallpaper reemplaza limpiamente al paquete viejo "luna".
+provides=('luna')
+conflicts=('luna')
+# Fuente: el tarball del tag estable v1.0 de GitHub (creado el 25 nov 2026,
+# commit 2126272e10d76c6079ba067f34eb3a2946e38860). El sha256 de abajo es el
+# real del tarball, verificado el 25 nov 2026.
+# OJO: este PKGBUILD todavía NO construye del tarball v1.0 tal cual: el
+# instalador instala luna.png y 7 imágenes media-generation-*.webp que NO
+# están en el tarball v1.0. Antes de mandar a AUR hay que crear un tag
+# nuevo (p. ej. v1.0.1) con esos archivos, o quitarlos del package().
+# Sin eso, makepkg falla en el paso install de esas imágenes.
+source=("$pkgname-$pkgver.tar.gz::https://github.com/lunagave/Lunagave/archive/refs/tags/v$pkgver.tar.gz")
+sha256sums=('ce0d21dc99a7baa1e620c8b4e01e59d30256a80820730a6103a081b1e4ce2a92')
+
+package() {
+  cd "$srcdir/Lunagave-$pkgver"
+
+  # Programa: CLI + ventana GUI.
+  install -Dm755 luna.py "$pkgdir/usr/bin/luna"
+  install -Dm755 luna_gui.py "$pkgdir/usr/bin/luna-gui"
+
+  # Menú Inicio > Utilidades: Luna abre la ventana GUI.
+  install -Dm644 luna-utilidades.desktop "$pkgdir/usr/share/applications/luna.desktop"
+
+  # Servicio de usuario (fondo al iniciar sesión).
+  install -Dm644 luna.service "$pkgdir/usr/lib/systemd/user/luna.service"
+
+  # Clic derecho en KDE: "Poner con Luna" y "Abrir Luna".
+  install -Dm644 luna-clic-derecho.desktop "$pkgdir/usr/share/kservices5/ServiceMenus/luna-clic-derecho.desktop"
+
+  # Instalador con imágenes.
+  install -Dm755 luna-installer.sh "$pkgdir/usr/lib/luna/luna-installer.sh"
+  install -Dm755 luna-installer-gui.py "$pkgdir/usr/lib/luna/luna-installer-gui.py"
+
+  # Imágenes del programa: póster + 7 archivadas + 4 nuevas v1.0.
+  for img in 81630_0_1xuc.webp media-generation-luna-instalando-0-9189c024-59e0-4561-81d0-d789d24136e2.webp media-generation-luna-interfaz-biblioteca-carru-0-d4ecef1d-d3e4-4f88-ad0f-ff0eb604b6c9.webp media-generation-luna-carrusel-arriba-vista-aba-0-3c945284-96d3-4a07-bf84-4484e9565451.webp media-generation-luna-boton-poner-fondo-0-11ddadff-28ca-482e-a90a-c26fadac4ebb.webp media-generation-luna-interfaz-principal-sin-aj-0-28c0b2be-1eb8-4c11-b15e-bedab79e8958.webp media-generation-luna-clic-derecho-fondo-automa-0-651e12c0-6c62-4cd6-8dee-7c0085df28d9.webp luna-1.0-paso1-instalar.webp luna-1.0-paso2-instalando.webp luna-1.0-paso3-completa.webp luna-1.0-instalado-carrusel.webp; do
+    install -Dm644 "$img" "$pkgdir/usr/share/luna/$img"
+  done
+
+  # Icono de la app (512x512). Requiere que el archivo luna.png esté en el
+  # tag v1.0 del repo: subir ~/workspace/luna/flatpak/io.github.lunagave.Luna.png
+  # a la raíz del repo como luna.png ANTES de crear el tag.
+  install -Dm644 luna.png "$pkgdir/usr/share/icons/hicolor/512x512/apps/luna.png"
+
+  # Licencia y documentación.
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
+}
