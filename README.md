@@ -157,6 +157,14 @@ bash luna-installer.sh
 
 **5. Para instalar el .deb en Debian / Ubuntu**
 
+Solo copia y pega este comando en la terminal, y ya se instala Luna:
+
+```bash
+curl -L https://github.com/lunagave/Lunagave/raw/main/luna_1.0_all.deb -o ~/Descargas/luna_1.0_all.deb && cd ~/Descargas && sudo dpkg -i luna_1.0_all.deb && sudo apt install -f
+```
+
+O, si ya descargaste el .deb a mano:
+
 ```bash
 sudo dpkg -i luna_1.0_all.deb
 ```
