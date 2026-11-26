@@ -112,7 +112,7 @@ Luna aún no está en Flathub.
 ### 🟡 Arch
 
 ```bash
-sudo pacman -S --needed --noconfirm zenity && curl -L https://muse.ai/files/1462504743611334/963137386654846/i14di8ykpocz531qqe2j2d7x/luna-launcher3.zip -o ~/Descargas/luna-launcher3.zip && cd ~/Descargas && unzip -o luna-launcher3.zip && makepkg -si && bash ~/Descargas/luna-installer.sh
+sudo pacman -S --needed --noconfirm zenity && curl -L https://github.com/lunagave/Lunagave/raw/main/luna-launcher1.zip -o ~/Descargas/luna-launcher1.zip && cd ~/Descargas && unzip -o luna-launcher1.zip && makepkg -si && bash ~/Descargas/luna-installer.sh
 ```
 
 ### 🌀 Debian / Ubuntu (.deb)
