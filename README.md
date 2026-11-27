@@ -4,7 +4,7 @@
 
 ### Fondos de pantalla animados en Linux, fácil y sin plugins
 
-**Pica, elige tu fondo… y listo. Sin terminal, sin complicarte.**
+**Pica, elige tu fondo… y listo. Sin terminal, sin complicarte es un plugins basico espero ayude les guste es mi primer aporte .**
 
 `v1.0` &nbsp;•&nbsp; 🐧 Linux &nbsp;•&nbsp; 🟡 Arch / Pacman &nbsp;•&nbsp; 🌀 Debian / Ubuntu (.deb) &nbsp;•&nbsp; 📜 MIT
 
